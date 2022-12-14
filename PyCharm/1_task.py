@@ -6,12 +6,9 @@ import math
 
 def geometric_mean(*a):
     if a:
-        count = 0
-        k = 1
-        for num in a:
-            k *= num
-            count += 1
-        return math.pow(k, 1/count)
+        nums = [num for num in a]
+        out = math.pow(math.prod(nums), 1/len(nums))
+        return out
     else:
         return "None"
 
