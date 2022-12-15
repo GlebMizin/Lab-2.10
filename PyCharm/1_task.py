@@ -12,5 +12,6 @@ def geometric_mean(*a):
     else:
         return "None"
 
-
-print(f'Geometric mean of entered args: {geometric_mean(2,5,6,8)}')
+    
+if __name__ == "__main__":
+    print(f'Geometric mean of entered args: {geometric_mean(2,5,6,8)}')
