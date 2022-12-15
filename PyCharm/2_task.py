@@ -13,4 +13,5 @@ def average_harm(*a):
         return "None"
 
 
-print(f'Average of entered args: {average_harm(5, 2, 3)}')
+if __name__ == "__main__":
+    print(f'Average of entered args: {average_harm(5, 2, 3)}')
