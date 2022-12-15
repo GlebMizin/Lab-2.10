@@ -4,23 +4,14 @@
 import math
 
 
-def multiply(*a):
+def multiply_new(*a):
     if a:
-        min_ind = 0
-        max_ind = 0
-        min_values = min(a)
-        max_values = max(a)
-
-        for ind, val in enumerate(a):
-            if val == min_values:
-                min_ind = ind + 1
-            elif val == max_values:
-                max_ind = ind
-
-        m = math.prod(a[min_ind:max_ind])
-        return m
+        min_i = a.index(min(a)) + 1
+        max_i = a.index(max(a))
+        return math.prod(a[min_i:max_i])
     else:
         return "None"
 
 
-print(f'Multiply between min and max: {multiply(3,6,7,9)}')
+if __name__ == "__main__":
+    print(f'Multiply between min and max: {multiply_new(3,6,7,9)}')
