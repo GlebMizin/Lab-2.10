@@ -4,7 +4,7 @@
 import math
 
 
-def geometric_mean(*a):
+def geometric_mean(*args):
     if a:
         nums = [num for num in a]
         out = math.pow(math.prod(nums), 1/len(nums))
