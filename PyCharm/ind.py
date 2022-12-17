@@ -4,13 +4,13 @@
 import math
 
 
-def multiply_new(*a):
+def multiply_new(*args):
     if a:
         min_i = a.index(min(a)) + 1
         max_i = a.index(max(a))
         return math.prod(a[min_i:max_i])
     else:
-        return "None"
+        return None
 
 
 if __name__ == "__main__":
