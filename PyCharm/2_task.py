@@ -4,13 +4,13 @@
 import math
 
 
-def average_harm(*a):
+def average_harm(*args):
     if a:
         nums = [1/num for num in a]
         out = len(nums)/math.fsum(nums)
         return out
     else:
-        return "None"
+        return None
 
 
 if __name__ == "__main__":
